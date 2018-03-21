@@ -45,7 +45,7 @@ void OnPlayerPrintText(string printtext) {
 		player1.setTexture(player1texture);
 		player1.setPosition(101, 101);
 
-		player1.setTextureRect(IntRect(96 * int(CurrentFrame) + 96, 96, -96, 96));
+	
 
 		while (window.isOpen())
 		{
@@ -62,18 +62,17 @@ void OnPlayerPrintText(string printtext) {
 						break;
 					}
 				}if ((Keyboard::isKeyPressed(Keyboard::Right) || (Keyboard::isKeyPressed(Keyboard::D)))) {
-					player1.setTextureRect(IntRect(96 * int(CurrentFrame), 96, 96, 96)); 
-					player1.move(0.5, 0);
+					player1.move(0.3, 0);
 					
 				}if ((Keyboard::isKeyPressed(Keyboard::Left) || (Keyboard::isKeyPressed(Keyboard::A)))) {
-					player1.setTextureRect(IntRect(-96 * int(CurrentFrame), 96, 96, 96));
-					player1.move(-0.5, 0);
+					
+					player1.move(-0.3, 0);
 				}if ((Keyboard::isKeyPressed(Keyboard::Down) || (Keyboard::isKeyPressed(Keyboard::S)))) {
-					player1.setTextureRect(IntRect(96 * int(CurrentFrame), 96, 96, 96));
-					player1.move(0, 0.5);
+					
+					player1.move(0, 0.3);
 				}if ((Keyboard::isKeyPressed(Keyboard::Up) || (Keyboard::isKeyPressed(Keyboard::W)))) {
-					player1.setTextureRect(IntRect(96 * int(CurrentFrame), 96, 96, 96));
-					player1.move(0, -0.5);
+					
+					player1.move(0, -0.3);
 				}
 
 
